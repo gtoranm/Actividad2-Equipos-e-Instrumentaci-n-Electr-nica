@@ -23,8 +23,8 @@ Enlace al proyecto: https://wokwi.com/projects/432357065938941953
 - LED azul (enfriador)
 - LED blanco (luz de emergencia)
 - 74HC595 (registro de desplazamiento)
-- LEDs adicionales (luces de posición)
-- Botón de usuario
+- LEDs de posición (se encienden mas cuanto menos luz externa se detecta)
+- Botón de usuario (Encender la pantalla entre 1-4s fuera del modo estandar).
 
 ## Funcionalidades
 
@@ -33,7 +33,7 @@ Enlace al proyecto: https://wokwi.com/projects/432357065938941953
 - Gestión de batería simulada, incluyendo carga y descarga.
 - Modo estandar: pantalla funcionando todo el tiempo.
 - Modo de ahorro de energía: pantalla apagada cuando no se necesita.
-- Modo UltraAhorro de energia: pantalla se enciende muy brevemente para mostrar mensaje de bateria baja, no muestra medidas, solo luz posicionamiento de emergencia encendida.
+- Modo ultraAhorro de energia: pantalla se enciende muy brevemente para mostrar mensaje de bateria baja, no muestra medidas, solo luz posicionamiento de emergencia encendida.
 - Modo inhabilitación bateria: calefactor/enfriador encendido, pantalla apagada cuando no se necesita, no muestra medidas mas que las de los cambios de temperatura de la bateria, el nivel de esta y los toiempos totales de uso del calefactor/refrigerador.
 - Visualización de información relevante en una pantalla LCD.
 
@@ -61,16 +61,18 @@ void controlTemperatura() {
 
 - `boya_climatica.ino`: Código fuente principal
 - `diagram.json`: Esquema del circuito en Wokwi
+- `libraries.txt`: Lista de librerias utilizadas en Wokwi
 - `images/CircuitoActividad2.png`: Imagen del circuito
 - `README.md`: Documentación del proyecto
 
 ## Cómo probarlo
 
 1. Abrir el enlace de Wokwi.
-2. Usar el botón verde para activar la pantalla.
-3. Gira el potenciómetro para cambiar la dirección del viento.
-4. Cambiar la luz del LDR y observar el comportamiento.
-5. Pulsar el botón azul para simular ráfagas de viento.
+2. Establecer una temperatura inicial a la bateria en el DHT22 (Temperatura inicial Bateria = Temperatura Exterior) y observa el comportamiento (Enfriador/Calefactor)
+3. Cambiar la luz del LDR y observar el comportamiento (LEDs de Posicionamiento).
+4. Usar el botón verde para activar la pantalla si fuera necesario (Modos Ahorro de Energia e inhabilitación bateria (cuando esta calentandose/enfiandose).
+5. Gira el potenciómetro para cambiar la dirección del viento.
+6. Pulsar el botón azul para simular ráfagas de viento.
 
 ## Conclusión
 
