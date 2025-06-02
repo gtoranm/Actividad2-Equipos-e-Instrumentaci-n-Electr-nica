@@ -68,12 +68,18 @@ void controlTemperatura() {
 ## Cómo probarlo
 
 1. Abrir el enlace de Wokwi.
-2. Establecer una temperatura inicial a la bateria en el DHT22 (Temperatura inicial Bateria = Temperatura Exterior) y observa el comportamiento (Enfriador/Calefactor)
+2. Establecer una temperatura inicial a la bateria en el DHT22 (temperatura inicial bateria = temperatura exterior) y observa el comportamiento (enfriador/calefactor) o modo estandar.
 3. Cambiar la luz del LDR y observar el comportamiento (LEDs de Posicionamiento).
 4. Usar el botón verde para activar la pantalla si fuera necesario (Modos Ahorro de Energia e inhabilitación bateria (cuando esta calentandose/enfiandose).
 5. Gira el potenciómetro para cambiar la dirección del viento.
 6. Pulsar el botón azul para simular ráfagas de viento.
+7. Para probar el modo ultra-ahorro de energía es necesario cambiar el valor inicial de la bateria comentando la primera linea y descomentando la tercera en esta parte inicial del código:
 
+```cpp
+   unsigned long bateria = 1000000; //mA PRUEBA FUNCIONAMIENTO NORMAL (BATERIA CARGADA)
+//unsigned long bateria = 200000; //mA PRUEBA FUNCIONAMIENTO BATERIA  BAJA
+//unsigned long bateria = 100000; //mA PRUEBA FUNCIONAMIENTO BATERIA  MUY BAJA
+```
 ## Conclusión
 
 Este proyecto demuestra cómo una solución embebida puede integrarse con múltiples sensores y actuadores, gestionar su propio consumo energético y presentar información de forma clara al usuario. La simulación permite evaluar su comportamiento en condiciones variables.
