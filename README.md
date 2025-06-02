@@ -33,7 +33,7 @@ Enlace al proyecto: https://wokwi.com/projects/432357065938941953
 - Gestión de batería simulada, incluyendo carga y descarga.
 - Modo estandar: pantalla funcionando todo el tiempo.
 - Modo de ahorro de energía: pantalla apagada cuando no se necesita.
-- Modo ultraAhorro de energia: pantalla se enciende muy brevemente para mostrar mensaje de bateria baja, no muestra medidas, solo luz posicionamiento de emergencia encendida.
+- Modo ultra-ahorro de energia: pantalla se enciende muy brevemente para mostrar mensaje de bateria baja, no muestra medidas, solo luz posicionamiento de emergencia encendida.
 - Modo inhabilitación bateria: calefactor/enfriador encendido, pantalla apagada cuando no se necesita, no muestra medidas mas que las de los cambios de temperatura de la bateria, el nivel de esta y los toiempos totales de uso del calefactor/refrigerador.
 - Visualización de información relevante en una pantalla LCD.
 
