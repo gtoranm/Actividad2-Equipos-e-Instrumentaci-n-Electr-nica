@@ -5,7 +5,9 @@ Autor: Gonzalo Torán Mosulén
 
 ## Descripción del proyecto
 
-Este proyecto simula una boya meteorológica autónoma, capaz de medir condiciones ambientales como temperatura, humedad, viento y luz solar. Además, simula una batería que se recarga con energía solar y consume energía dependiendo de los componentes en uso (los parametros asignados a los niveles de gasto, carga y capacidad de la bateria han sido calculados para permitir una autonomia considerable durante la noche y varios dias de poca luz). Tiene 4 modos de funcionamiento diferente en funcion del ahorro de energia que se quiera lograr, estos estados son adpoptados por la boya de forma automática en funcion de factores como, nivel de Bateria, capacidad de carga (factores de inhabilitacion de la carga o nivel de luz exterior que alimenta la bateria a traves del panel solar simulado. Está implementado sobre Arduino UNO y diseñado en el entorno de simulación Wokwi.
+Este proyecto simula una boya meteorológica autónoma, capaz de medir condiciones ambientales como temperatura, humedad, viento y luz solar. Además, simula una batería que se recarga con energía solar y consume energía dependiendo de los componentes en uso (los parametros asignados a los niveles de gasto, carga y capacidad de la bateria han sido calculados para permitir una autonomia considerable durante la noche y varios dias de poca luz). 
+
+Tiene 4 modos de funcionamiento diferente en funcion del ahorro de energia que se quiera lograr, estos estados son adpoptados por la boya de forma automática en funcion de factores como, nivel de Bateria, capacidad de carga (factores de inhabilitacion de la carga o nivel de luz exterior que alimenta la bateria a traves del panel solar simulado. Está implementado sobre Arduino UNO y diseñado en el entorno de simulación Wokwi.
 
 Enlace al proyecto: https://wokwi.com/projects/432357065938941953
 
